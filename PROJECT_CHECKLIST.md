@@ -1,0 +1,25 @@
+# Week 2 Submission Checklist
+
+- [x] Real Lahore Zameen.com dataset included
+- [x] Price and area units normalized
+- [x] Duplicate and outlier handling documented
+- [x] Five-fold price-binned cross-validation
+- [x] XGBoost trial log saved as CSV
+- [x] Ridge trial log saved as CSV
+- [x] Two model families evaluated on the same split
+- [x] RMSE in PKR and percentage, MAPE and MAE reported
+- [x] SHAP importance generated
+- [x] Permutation importance generated
+- [x] Amenity correlation heatmap generated
+- [x] Full-vs-trimmed feature comparison generated
+- [x] 90% prediction interval generated
+- [x] Empirical interval coverage validated
+- [x] Residuals plotted by prediction, area and society
+- [x] Four stress scenarios quantified
+- [x] Leakage re-audit documented
+- [x] Model artifact size measured
+- [x] Single and batch latency measured
+- [x] Full preprocessor and model saved together
+- [x] `deployment/load_and_predict.py` tested
+- [x] Flask frontend completed
+- [x] README and results report completed

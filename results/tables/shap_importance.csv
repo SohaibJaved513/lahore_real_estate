@@ -1,0 +1,331 @@
+transformed_feature,mean_abs_shap_log_price
+numeric__area_sqft,0.5848068
+high_card__location,0.09023043
+low_card__society_tier_Standard,0.026512172
+numeric__brand_new,0.026014404
+numeric__bed_bath_interaction,0.024720712
+low_card__city_area_DHA Defence,0.02119499
+numeric__property_age,0.015970584
+numeric__bedrooms,0.013605664
+numeric__area_log,0.01141347
+numeric__location_depth,0.010136056
+numeric__area_per_bedroom,0.009891389
+numeric__bathrooms,0.009148948
+numeric__basement,0.008972011
+numeric__furnished,0.008287441
+low_card__city_area_Bahria Orchard,0.0076729204
+low_card__society_tier_Mid,0.0072675156
+numeric__amenities_count,0.0060791126
+numeric__kitchens,0.0058228676
+numeric__built_year_missing,0.0056992983
+numeric__lawn_garden,0.0052500535
+numeric__gym,0.004275587
+low_card__city_area_Gulberg,0.004270979
+numeric__bedroom_bath_ratio,0.0041741016
+low_card__city_area_Bahria Town,0.0041043977
+numeric__store_rooms,0.003967309
+numeric__study_room,0.0038229395
+low_card__city_area_Askari,0.0036730221
+numeric__electricity_backup,0.0034036846
+numeric__corner,0.0033586733
+low_card__city_area_Park View City,0.0031619803
+low_card__city_area_Johar Town,0.0029351376
+low_card__city_area_Sabzazar Scheme,0.0029200541
+numeric__servant_quarters,0.0027376544
+low_card__city_area_Raiwind Road,0.0023287956
+numeric__swimming_pool,0.0021405322
+low_card__city_area_LDA Avenue,0.0021034568
+numeric__lounge_sitting_room,0.0020630846
+numeric__missingindicator_bedrooms,0.0019630627
+low_card__city_area_Chinar Bagh,0.0018636789
+low_card__city_area_Allama Iqbal Town,0.0017240909
+low_card__city_area_Samanabad,0.0015886638
+low_card__city_area_Cavalry Ground,0.0015258949
+low_card__city_area_Tariq Gardens,0.0013907126
+low_card__city_area_Punjab Coop Housing Society,0.0013681094
+low_card__city_area_Bankers Avenue Cooperative Housing Society,0.0013623885
+low_card__city_area_Central Park Housing Scheme,0.0013458381
+low_card__city_area_DHA 11 Rahbar,0.0013192438
+low_card__city_area_Khayaban-e-Amin,0.0013082519
+low_card__city_area_Gulshan-e-Ravi,0.0012688948
+low_card__city_area_Divine Gardens,0.0012355737
+low_card__city_area_EME Society,0.0012060285
+low_card__city_area_Wapda Town,0.0011984825
+low_card__city_area_Paragon City,0.0011208536
+low_card__city_area_Model Town,0.0010819208
+low_card__city_area_Bahria Nasheman,0.0010508785
+low_card__city_area_Lake City Meadows,0.0009945435
+low_card__city_area_New Lahore City,0.0009906981
+low_card__city_area_Al Rehman Garden,0.00085337774
+low_card__city_area_Nasheman-e-Iqbal,0.0008490386
+low_card__society_tier_Premium,0.0008227295
+low_card__city_area_Kahna,0.00077269785
+low_card__city_area_Lahore Motorway City,0.00070235744
+low_card__city_area_Green City,0.00067871384
+low_card__city_area_Cantt,0.00066138967
+low_card__city_area_College Road,0.0006554637
+low_card__city_area_Valencia Housing Society,0.0005536823
+numeric__double_unit,0.0005484657
+low_card__city_area_Cavalry Extension,0.00054563244
+numeric__drawing_room,0.0004986268
+numeric__dining_room,0.00048822572
+low_card__city_area_GT Road,0.00045419016
+low_card__city_area_IEP Engineers Town,0.00045349408
+numeric__under_construction,0.00044714534
+numeric__missingindicator_property_age,0.0004431613
+low_card__city_area_Al Haram Garden,0.00044243506
+low_card__city_area_Ghous Garden,0.00044090638
+low_card__city_area_Beacon House Society,0.00043816687
+low_card__city_area_Bedian Road,0.00043115672
+numeric__missingindicator_bathrooms,0.00042525568
+low_card__city_area_Elite Town,0.00042168697
+low_card__city_area_Pak Arab Housing Society,0.0003904412
+low_card__city_area_Canal Garden,0.00035525707
+numeric__missingindicator_bed_bath_interaction,0.00035207096
+low_card__city_area_Mughalpura,0.00031843016
+low_card__city_area_Ferozepur Road,0.0003114472
+low_card__city_area_Jubilee Town,0.0002846226
+low_card__city_area_Al Jalil Garden,0.0002573423
+numeric__missingindicator_area_per_bedroom,0.00024248223
+low_card__city_area_Grand Avenues Housing Scheme,0.00023119885
+numeric__park_facing,0.00021762542
+low_card__city_area_Marghzar Officers Colony,0.00021577417
+low_card__city_area_Nishtar Colony,0.00020895751
+low_card__city_area_Township,0.00020715543
+low_card__city_area_Garden Town,0.00020531114
+low_card__city_area_Shadman,0.00019586174
+low_card__city_area_Faisal Town,0.0001807628
+low_card__city_area_Defence Road,0.0001529409
+low_card__city_area_NFC 1,0.00013482061
+low_card__city_area_Audit & Accounts Housing Society,0.00013443785
+low_card__city_area_Al Noor Park Housing Society,0.00012798847
+low_card__city_area_Iqbal Park,0.00012781151
+low_card__city_area_Multan Road,0.0001163099
+low_card__city_area_Main Canal Bank Road,0.000114601135
+low_card__city_area_Naz Town,0.00010954607
+low_card__city_area_Sanda,0.00010589045
+low_card__city_area_Walton Road,0.00010222435
+low_card__city_area_Architects Engineers Housing Society,9.775554e-05
+low_card__city_area_Hamza Town,9.126996e-05
+low_card__city_area_UET Housing Society,8.7152235e-05
+low_card__city_area_Zaman Colony,7.5402306e-05
+low_card__city_area_Eden,7.5241805e-05
+low_card__city_area_Gulshan-e-Lahore,6.635951e-05
+low_card__city_area_OPF Housing Scheme,6.619061e-05
+low_card__city_area_New Super Town,6.547535e-05
+low_card__city_area_Garhi Shahu,6.1257015e-05
+low_card__city_area_PCSIR Housing Scheme,5.624527e-05
+low_card__city_area_Jallo,4.82975e-05
+low_card__city_area_IBL Housing Scheme,4.3768676e-05
+low_card__city_area_Airport Road,4.3381806e-05
+numeric__is_amenities_listed,4.1241798e-05
+low_card__city_area_Ichhra,3.972156e-05
+low_card__city_area_Shershah Colony - Raiwind Road,3.9528655e-05
+low_card__city_area_Pine Avenue,3.7206944e-05
+low_card__city_area_Chungi Amar Sadhu,3.547947e-05
+low_card__city_area_TIP Housing Society,3.5455138e-05
+low_card__city_area_Lalazaar Garden,3.4611963e-05
+low_card__city_area_Islam Nagar,3.294059e-05
+low_card__city_area_Harbanspura,2.9849358e-05
+low_card__city_area_Fazaia Housing Scheme,2.9380895e-05
+low_card__city_area_Fateh Garh,2.4873681e-05
+low_card__city_area_PCSIR Staff Colony,2.4854762e-05
+low_card__city_area_Izmir Town,2.364707e-05
+low_card__city_area_Al-Hafiz Town,2.3374714e-05
+low_card__city_area_Formanites Housing Scheme,2.2798944e-05
+low_card__city_area_Alfalah Town,2.0735826e-05
+low_card__city_area_Rehan Garden,1.942035e-05
+low_card__city_area_Canal View,1.8703451e-05
+low_card__city_area_Vital Homes Housing Scheme,1.561122e-05
+low_card__city_area_Sozo Town,1.46838e-05
+low_card__city_area_Military Accounts Housing Society,1.468225e-05
+low_card__city_area_New Garden Town,1.4233545e-05
+low_card__city_area_Green Cap Housing Society,1.2911245e-05
+low_card__city_area_Peer Colony,1.0485115e-05
+low_card__city_area_Saroba Gardens Housing Society,8.912687e-06
+low_card__city_area_Royal Residencia,8.2618335e-06
+low_card__city_area_PIA Housing Scheme,8.116337e-06
+numeric__missingindicator_kitchens,5.8274704e-06
+low_card__city_area_Revenue Society,4.6141777e-06
+low_card__city_area_Canal Bank Housing Scheme,5.1154586e-07
+low_card__city_area_Sunny Park,0.0
+low_card__city_area_Aashiana Road,0.0
+low_card__city_area_Wahdat Road,0.0
+low_card__city_area_Venus Housing Scheme,0.0
+low_card__city_area_Upper Mall,0.0
+low_card__city_area_UMT Society,0.0
+low_card__city_area_Tricon Village,0.0
+low_card__city_area_Thokar Niaz Baig,0.0
+low_card__city_area_Temple Road,0.0
+low_card__city_area_Tajpura,0.0
+low_card__city_area_Taj Bagh Scheme,0.0
+low_card__city_area_TECH Society,0.0
+low_card__city_area_T & T Aabpara Housing Society,0.0
+low_card__city_area_Sultan Town,0.0
+low_card__city_area_Supreme Villas,0.0
+low_card__city_area_Super Town,0.0
+low_card__city_area_Dogech,0.0
+low_card__city_area_Dubai Town,0.0
+low_card__city_area_Zaheer Villas,0.0
+low_card__city_area_Zaman Park,0.0
+low_card__city_area_Wagha Town,0.0
+low_card__city_area_Hajvery Housing Scheme,0.0
+low_card__city_area_HBFC Housing Society,0.0
+low_card__city_area_Gulshan-E-Mustafa Housing Society,0.0
+low_card__city_area_Gulgasht Colony Rustam Park,0.0
+low_card__city_area_Gul-e-Damin,0.0
+low_card__city_area_Green Town Sector D2,0.0
+low_card__city_area_Green Park,0.0
+low_card__city_area_Government Employees Cooperative Housing Society (GECHS),0.0
+low_card__city_area_Iqbal Avenue,0.0
+low_card__city_area_Islamabad Colony,0.0
+low_card__city_area_Islampura,0.0
+low_card__city_area_Islamia Park,0.0
+low_card__city_area_Ismail Town,0.0
+low_card__city_area_Highcourt Society,0.0
+low_card__city_area_Harbanspura Road,0.0
+low_card__city_area_Hassan Town,0.0
+low_card__city_area_Farooq Colony,0.0
+low_card__city_area_Eden Avenue Extension,0.0
+low_card__city_area_Dubban Pura,0.0
+low_card__city_area_Fort Villas,0.0
+low_card__city_area_Garrison Homes,0.0
+low_card__city_area_Gold Land Garden,0.0
+low_card__city_area_Gosha-e-Ahbab,0.0
+low_card__city_area_Gajju Matah,0.0
+low_card__property_type_House,0.0
+low_card__city_area_Dharampura,0.0
+low_card__city_area_Dream Avenue Lahore,0.0
+low_card__city_area_Abdalians Cooperative Housing Society,0.0
+numeric__missingindicator_bedroom_bath_ratio,0.0
+low_card__city_area_Aabpara Coop Housing Society,0.0
+numeric__missingindicator_servant_quarters,0.0
+numeric__missingindicator_store_rooms,0.0
+low_card__city_area_Chughtai Garden,0.0
+low_card__city_area_Chauburji,0.0
+low_card__city_area_Begum Kot,0.0
+low_card__city_area_Canal Fort II,0.0
+low_card__city_area_Batapur,0.0
+low_card__city_area_Bahar Colony,0.0
+low_card__city_area_Bankers Co-operative Housing Society,0.0
+low_card__city_area_Bankers Town,0.0
+low_card__city_area_Bagh Gul Begum,0.0
+low_card__city_area_BOR - Board of Revenue Housing Society,0.0
+low_card__city_area_Judicial Colony,0.0
+low_card__city_area_Bagh-e-Iram Housing Society,0.0
+low_card__city_area_Jora Pull,0.0
+low_card__city_area_Ittifaq Town,0.0
+low_card__city_area_Jaffaria Colony,0.0
+low_card__city_area_Jail Road,0.0
+low_card__city_area_Lahore Villas,0.0
+low_card__city_area_Land Breeze Housing Society,0.0
+low_card__city_area_Madina Garden Society,0.0
+low_card__city_area_Madar-e-Millat Road,0.0
+low_card__city_area_Maryam Town,0.0
+low_card__city_area_Mateen Avenue,0.0
+low_card__city_area_Mehar Fayaz Colony,0.0
+low_card__city_area_Daroghewala,0.0
+low_card__city_area_Kot Khawaja Saeed,0.0
+low_card__city_area_Kotli Abdur Rahman,0.0
+low_card__city_area_Lahore - Jaranwala Road,0.0
+low_card__city_area_Civil Defence,0.0
+low_card__city_area_Kamahan Road,0.0
+low_card__city_area_Karbath,0.0
+low_card__city_area_Khayaban-e-Quaid,0.0
+low_card__city_area_Clifton Colony,0.0
+low_card__city_area_Muslim Town,0.0
+low_card__city_area_Mozang,0.0
+low_card__city_area_Mohlanwal Scheme,0.0
+low_card__city_area_Mohlanwal Road,0.0
+low_card__city_area_Mohafiz Town,0.0
+low_card__city_area_Nazir Garden Society,0.0
+low_card__city_area_Mustafa Town,0.0
+low_card__city_area_NFC 2,0.0
+low_card__city_area_New Canal Park,0.0
+low_card__city_area_New Canal Garden Society,0.0
+low_card__city_area_New Samanabad,0.0
+low_card__city_area_New Muslim Town,0.0
+low_card__city_area_Nishat Colony,0.0
+low_card__city_area_New Amir Town,0.0
+low_card__city_area_Nadeem Shaheed Road,0.0
+low_card__city_area_Nawab Town,0.0
+low_card__city_area_PASSCO Housing Society,0.0
+low_card__city_area_PAF Colony,0.0
+low_card__city_area_P & D Housing Society,0.0
+low_card__city_area_PIA Main Boulevard,0.0
+low_card__city_area_Peco Road,0.0
+low_card__city_area_Park Avenue Housing Scheme,0.0
+low_card__city_area_Pico Road,0.0
+low_card__city_area_Manawan,0.0
+low_card__city_area_Mehmood Booti,0.0
+low_card__city_area_Mian Amiruddin Park,0.0
+low_card__city_area_Millat Tractors Employees Housing Society,0.0
+low_card__city_area_LDA Road,0.0
+low_card__city_area_Lahore Canal Bank Cooperative Housing Society,0.0
+low_card__city_area_Lahore Medical Housing Society,0.0
+low_card__city_area_Lahore Press Club Housing Scheme,0.0
+low_card__city_area_Kahna Kacha,0.0
+low_card__city_area_Raj Garh,0.0
+low_card__city_area_Rail Town (Canal City),0.0
+low_card__city_area_Race Course Road,0.0
+low_card__city_area_Qadri Colony,0.0
+low_card__city_area_Punjab University Employees Society,0.0
+low_card__city_area_Punjab Small Industries Colony,0.0
+low_card__city_area_Punjab Govt Employees Society,0.0
+low_card__city_area_Punjab Government Servant Housing Foundation,0.0
+low_card__city_area_Public Health Society,0.0
+low_card__city_area_Rehmat Colony,0.0
+low_card__city_area_Rizwan Garden Scheme,0.0
+low_card__city_area_Royal Garden,0.0
+low_card__city_area_Aftab Garden,0.0
+low_card__city_area_Rewaz Garden,0.0
+low_card__city_area_Rehman Gardens,0.0
+low_card__city_area_Real Cottages,0.0
+low_card__city_area_Ahbab Colony,0.0
+low_card__city_area_Agrics Town,0.0
+low_card__city_area_Afzal Park,0.0
+low_card__city_area_Aitchison Society,0.0
+low_card__city_area_Al Faisal Town,0.0
+low_card__city_area_Al Hamra Town,0.0
+low_card__city_area_Al-Hadi Garden,0.0
+low_card__city_area_Airline Housing Society,0.0
+low_card__city_area_Al-Hamad Colony (AIT),0.0
+low_card__city_area_Al-Hamd Park,0.0
+low_card__city_area_Al-Kareem Premier Housing Scheme,0.0
+low_card__city_area_Al-Qayyum Garden,0.0
+low_card__city_area_Ali Town,0.0
+low_card__city_area_Rehman Villas,0.0
+low_card__city_area_Rehmanpura (Ferozpur Road),0.0
+low_card__city_area_Ravi Gardens Smart Homes,0.0
+low_card__city_area_Ashiana-e-Quaid Housing Scheme,0.0
+low_card__city_area_Amina Park,0.0
+low_card__city_area_Altaf Colony,0.0
+low_card__city_area_Ashraf Garden,0.0
+low_card__city_area_Sadaat Town,0.0
+low_card__city_area_Sadat Cooperative Housing Society (College Town),0.0
+low_card__city_area_Awan Town,0.0
+low_card__city_area_Atomic Energy Society - PAEC,0.0
+low_card__city_area_Sahafi Colony,0.0
+low_card__city_area_Sajid Garden,0.0
+low_card__city_area_Salli Town,0.0
+low_card__city_area_Salamatpura,0.0
+low_card__city_area_Samanzar Colony,0.0
+low_card__city_area_Shadab Garden,0.0
+low_card__city_area_Safari Garden Housing Scheme,0.0
+low_card__city_area_Azam Gardens,0.0
+low_card__city_area_Shah Khawar Town,0.0
+low_card__city_area_Shah Jamal,0.0
+low_card__city_area_Shalimar Link Road,0.0
+low_card__city_area_Shahdara,0.0
+low_card__city_area_Sheraz Town,0.0
+low_card__city_area_Sheraz Villas,0.0
+low_card__city_area_Shershah Colony - Ichra,0.0
+low_card__city_area_Shalimar Housing Scheme,0.0
+low_card__city_area_Siddiqia Society (College Road),0.0
+low_card__city_area_Sodiwal,0.0
+low_card__city_area_Subhan Allah Garden Housing Scheme,0.0
+low_card__city_area_Sue-e-Asal,0.0
+low_card__city_area_Sue-e-Asal Road,0.0
+low_card__city_area_Sufiabad,0.0
+low_card__city_area_Sui Gas Housing Society,0.0
+low_card__city_area_Sukh Chayn Gardens,0.0

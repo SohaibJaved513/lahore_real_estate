@@ -1,0 +1,12 @@
+{
+  "source_file": "lahore_house_listings_zameen.csv",
+  "initial_rows": 18249,
+  "rows_after_required_filters": 18157,
+  "link_duplicates_removed": 0,
+  "near_duplicates_removed": 1582,
+  "final_rows": 16575,
+  "rows_removed_total": 1674,
+  "price_min_pkr": 1490000.0,
+  "price_max_pkr": 500000000.0,
+  "median_price_pkr": 35000000.0
+}

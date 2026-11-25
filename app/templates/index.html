@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Machine-learning price estimates for Lahore houses listed for sale">
+    <title>Lahore House Price Intelligence</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <header class="topbar">
+        <a class="brand" href="/">
+            <span class="brand-mark">L</span>
+            <span><strong>Lahore House</strong><small>PRICE INTELLIGENCE</small></span>
+        </a>
+        <div class="status {{ 'ready' if model_ready else 'offline' }}">
+            <span></span>{{ 'Production model ready' if model_ready else 'Training required' }}
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Real Data ·Lahore · House Listings</p>
+                <h1>Understand a Lahore house price before making the decision.</h1>
+                <p class="lead">A tuned and explainable machine-learning pipeline trained on the supplied Zameen.com
+                    house listings. Every estimate includes a calibrated 90% prediction interval.</p>
+                <div class="hero-actions">
+                    <a href="#predictor" class="button primary">Estimate a house</a>
+                    <a href="#performance" class="button secondary">Inspect model profile</a>
+                </div>
+                <div class="scope-note"><b>Model scope</b><span>Lahore · House · For Sale</span></div>
+            </div>
+            <div class="market-card">
+                <div class="market-top"><span>LAHORE MARKET MODEL</span><span class="pulse"></span></div>
+                <div class="house-visual" aria-hidden="true">
+                    <div class="sun"></div>
+                    <div class="roof"></div>
+                    <div class="building"><i></i><i></i><i></i><i></i></div>
+                    <div class="ground"></div>
+                </div>
+                <div class="market-grid">
+                    <div><small>Selected pipeline</small><strong>{{ metrics.get('selected_model', 'Train the model')
+                            }}</strong></div>
+                    <div><small>Uncertainty method</small><strong>90% split-conformal</strong></div>
+                </div>
+            </div>
+        </section>
+
+        {% set model_metrics = metrics.get('metrics', {}) %}
+        <section id="performance" class="stats-grid">
+            <article><small>Validation RMSE</small><strong>{{ '%.2f'|format(model_metrics.get('rmse_pkr', 0) / 10000000)
+                    if metrics else '—' }}</strong><span>crore PKR</span></article>
+            <article><small>Validation MAPE</small><strong>{{ '%.1f'|format(model_metrics.get('mape_percent', 0)) if
+                    metrics else '—' }}%</strong><span>average percentage error</span></article>
+            <article><small>90% Interval Coverage</small><strong>{{
+                    '%.1f'|format(metrics.get('interval_coverage_percent', 0)) if metrics else '—'
+                    }}%</strong><span>held-out listings</span></article>
+            <article><small>Clean Listings</small><strong>{{ '{:,}'.format(metrics.get('clean_records', 0)) if metrics
+                    else '—' }}</strong><span>from the supplied dataset</span></article>
+        </section>
+
+        <section id="predictor" class="workspace">
+            <div class="form-panel">
+                <div class="section-heading">
+                    <p>LIVE ESTIMATOR</p>
+                    <h2>Describe the house</h2><span>Use values that closely match the listing. Unknown numeric fields
+                        may be left blank.</span>
+                </div>
+                <form id="prediction-form">
+                    <input type="hidden" name="property_type" value="House">
+                    <div class="form-grid">
+                        <label class="wide">Detailed location
+                            <input name="location" list="location-list" value="DHA Phase 6, DHA Defence" required>
+                            <datalist id="location-list">
+                                {% for location in options.get('locations', []) %}<option value="{{ location }}">{%
+                                    endfor %}
+                            </datalist>
+                        </label>
+                        <label>Broad society
+                            <input name="city_area" list="society-list" value="DHA Defence">
+                            <datalist id="society-list">
+                                {% for society in options.get('city_areas', []) %}<option value="{{ society }}">{%
+                                    endfor %}
+                            </datalist>
+                        </label>
+                        <label>Area value<input type="number" name="area_value" min="1" step="0.1" value="10"
+                                required></label>
+                        <label>Area unit<select name="area_unit">
+                                <option>Marla</option>
+                                <option>Kanal</option>
+                                <option>Square Feet</option>
+                            </select></label>
+                        <label>Bedrooms<input type="number" name="bedrooms" min="0" max="20" value="5"></label>
+                        <label>Bathrooms<input type="number" name="bathrooms" min="0" max="20" value="6"></label>
+                        <label>Built year<input type="number" name="built_year" min="1900" max="2030"
+                                value="2024"></label>
+                        <label>Kitchens<input type="number" name="kitchens" min="0" max="10" value="2"></label>
+                        <label>Store rooms<input type="number" name="store_rooms" min="0" max="10" value="1"></label>
+                        <label>Servant quarters<input type="number" name="servant_quarters" min="0" max="10"
+                                value="1"></label>
+                    </div>
+
+                    <div class="toggle-section">
+                        <div>
+                            <p>HOUSE FEATURES</p><span>Select only features present in the listing.</span>
+                        </div>
+                        <div class="toggle-grid">
+                            <label><input type="checkbox" name="furnished" value="1"><span>Furnished</span></label>
+                            <label><input type="checkbox" name="gym" value="1"><span>Gym</span></label>
+                            <label><input type="checkbox" name="study_room" value="1" checked><span>Study
+                                    room</span></label>
+                            <label><input type="checkbox" name="drawing_room" value="1" checked><span>Drawing
+                                    room</span></label>
+                            <label><input type="checkbox" name="dining_room" value="1" checked><span>Dining
+                                    room</span></label>
+                            <label><input type="checkbox" name="lawn_garden" value="1" checked><span>Lawn /
+                                    garden</span></label>
+                            <label><input type="checkbox" name="swimming_pool" value="1"><span>Swimming
+                                    pool</span></label>
+                            <label><input type="checkbox" name="electricity_backup" value="1" checked><span>Electricity
+                                    backup</span></label>
+                            <label><input type="checkbox" name="lounge_sitting_room" value="1" checked><span>Lounge /
+                                    sitting room</span></label>
+                            <label><input type="checkbox" name="corner" value="1"><span>Corner house</span></label>
+                            <label><input type="checkbox" name="park_facing" value="1"><span>Park facing</span></label>
+                            <label><input type="checkbox" name="basement" value="1"><span>Basement</span></label>
+                            <label><input type="checkbox" name="brand_new" value="1" checked><span>Brand
+                                    new</span></label>
+                            <label><input type="checkbox" name="double_unit" value="1"><span>Double unit</span></label>
+                            <label><input type="checkbox" name="under_construction" value="1"><span>Under
+                                    construction</span></label>
+                        </div>
+                    </div>
+                    <button class="predict-button" type="submit" {{ '' if model_ready else 'disabled' }}><span>Calculate
+                            estimated value</span><b>→</b></button>
+                </form>
+            </div>
+
+            <aside class="result-panel">
+                <div class="result-placeholder" id="placeholder">
+                    <div class="radar"><span></span><i></i></div>
+                    <h3>Waiting for house details</h3>
+                    <p>The model will return a point estimate and a realistic uncertainty range.</p>
+                </div>
+                <div class="result-content hidden" id="result">
+                    <p class="eyebrow">ESTIMATED LISTING PRICE</p>
+                    <h2 id="price">PKR 0</h2>
+                    <p class="crore-value" id="crore-price">0 crore</p>
+                    <div class="range-card"><small>Calibrated 90% prediction interval</small><strong id="range">PKR 0 —
+                            PKR 0</strong></div>
+                    <div class="confidence-bar"><span></span></div>
+                    <p class="note">This is a machine-learning estimate based on historical listings, not an official
+                        valuation or guaranteed sale price.</p>
+                </div>
+                <div class="error hidden" id="error"></div>
+            </aside>
+        </section>
+
+        <section class="method">
+            <div class="section-heading">
+                <p>DEFENSIBLE PIPELINE</p>
+                <h2>Performance supported by evidence.</h2>
+            </div>
+            <div class="method-grid">
+                <article><span>01</span>
+                    <h3>Dataset-specific cleaning</h3>
+                    <p>Crore/Lakh prices, Marla/Kanal areas, invalid room counts, duplicate listings and missing build
+                        years are handled explicitly.</p>
+                </article>
+                <article><span>02</span>
+                    <h3>Leak-safe tuning</h3>
+                    <p>Five-fold price-binned cross-validation keeps target encoding and imputation inside each training
+                        fold.</p>
+                </article>
+                <article><span>03</span>
+                    <h3>Explainability</h3>
+                    <p>SHAP and permutation importance provide two independent views of feature contribution.</p>
+                </article>
+                <article><span>04</span>
+                    <h3>Deployment profile</h3>
+                    <p>The full pipeline is serialized with measured single-listing latency, batch latency and artifact
+                        size.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer><span>Created by Sohaib Javed SJ</span><span>Python · scikit-learn · XGBoost · SHAP · Flask</span>
+    </footer>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+
+</html>

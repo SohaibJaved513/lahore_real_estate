@@ -1,0 +1,3 @@
+version,feature_count,removed_features,rmse_pkr,rmse_change_percent
+Full feature set,34,None,24167190.053576626,0.0
+Trimmed feature set,28,"servant_quarters, kitchens, electricity_backup, study_room, lounge_sitting_room, property_type",24766346.37889792,2.4792138597537208

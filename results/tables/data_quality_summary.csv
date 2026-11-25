@@ -1,0 +1,10 @@
+measure,value
+Raw rows,18249.0
+Clean modeling rows,16575.0
+Unique full locations,1300.0
+Unique broad societies,325.0
+Median price PKR,35000000.0
+Median area sqft,2250.0
+Missing built year,4208.0
+Missing bedrooms,303.0
+Missing bathrooms,401.0

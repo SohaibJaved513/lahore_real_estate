@@ -1,0 +1,20 @@
+{
+  "data_mode": "lahore_house_listings_zameen",
+  "dataset_file": "lahore_house_listings_zameen.csv",
+  "selected_model": "XGBoost tuned",
+  "test_records": 3315,
+  "training_records": 10608,
+  "calibration_records": 2652,
+  "clean_records": 16575,
+  "metrics": {
+    "rmse_pkr": 24167190.053576626,
+    "rmse_percent_mean": 42.79020835294662,
+    "mape_percent": 15.36182665486897,
+    "mae_pkr": 10474530.535595777
+  },
+  "interval_coverage_percent": 92.00603318250377,
+  "median_interval_width_pkr": 25636294.0,
+  "artifact_size_mb": 0.3157825469970703,
+  "single_prediction_ms": 4.766066999991381,
+  "batch_100_ms": 5.699493500060271
+}

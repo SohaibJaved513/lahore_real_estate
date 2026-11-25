@@ -1,0 +1,7 @@
+{
+  "method": "split_conformal_log_residual",
+  "coverage_target": 0.9,
+  "radius_log": 0.3463614942279847,
+  "empirical_coverage": 0.9200603318250377,
+  "median_interval_width_pkr": 25636294.0
+}

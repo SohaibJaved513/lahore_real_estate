@@ -1,0 +1,15 @@
+{
+  "xgboost": {
+    "model__regressor__subsample": 0.75,
+    "model__regressor__reg_lambda": 1.2,
+    "model__regressor__reg_alpha": 0.2,
+    "model__regressor__n_estimators": 320,
+    "model__regressor__min_child_weight": 2,
+    "model__regressor__max_depth": 6,
+    "model__regressor__learning_rate": 0.08,
+    "model__regressor__colsample_bytree": 0.9
+  },
+  "ridge": {
+    "model__regressor__alpha": 0.1
+  }
+}
